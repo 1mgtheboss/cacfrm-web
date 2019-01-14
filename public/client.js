@@ -1,7 +1,7 @@
 $(document).ready(function() {
     var automobiledata = [];
 
-    
+
 
     $("#enter-data").fadeIn(1000);
     $("#test-data").fadeIn(1000);
@@ -11,6 +11,8 @@ $(document).ready(function() {
 
 
     $("#test-data").click(function() {
+
+        automobiledata = [];
 
 
         var modelstore = ["zenvo st1", "ferrari laferrari", "pagani huayra", "aston martin one-77", "koenigsegg one:1", "ferrari f60 america", "mansory vivere bugatti veyron", "w motors lykan hypersport", "lamborghini veneno", "koenigsegg ccxr trevita"];
@@ -41,6 +43,10 @@ $(document).ready(function() {
 
     $("#generate").click(function() {
 
+        automobiledata = JSON.parse($("#enter-data").val());
+
+        
+
         var desiredcityautomobilecarbonfootprint = $("#city-carbon-footprint").val();
         var total = 0.0;
         var sum = 0.0;
@@ -48,7 +54,7 @@ $(document).ready(function() {
 
         var carids = [];
 
-        for (var i = 0; i < 1000; i++) {
+        for (var i = 0; i < automobiledata.length; i++) {
             sum += automobiledata[i]["carbon-footprint-per-day"];
 
         }
@@ -58,7 +64,7 @@ $(document).ready(function() {
 
         while (true) {
 
-            var carid = Math.floor(Math.random() * (999 - 0 + 1)) + 0;
+            var carid = Math.floor(Math.random() * ((automobiledata.length - 1) - 0 + 1)) + 0;
             if (automobiledata[carid]["carbon-footprint-per-day"] + total < desiredcityautomobilecarbonfootprint) {
 
                 if (carids.indexOf((carid + 1) + "") == -1) {
