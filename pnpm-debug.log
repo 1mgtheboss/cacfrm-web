@@ -1,0 +1,10 @@
+---
+  0 info pnpm: 
+    message: "A store server is running. All store manipulations are delegated to it."
+    prefix: "/app"
+  1 error pnpm: 
+    message: {}
+    err: 
+      name: "Error"
+      message: "Invalid version: \"1.0\""
+      stack: "Error: Invalid version: \"1.0\"\n    at Object.fixVersionField (/opt/nvm/versions/node/v10.14.2/lib/node_modules/pnpm/lib/node_modules/normalize-package-data/lib/fixer.js:191:13)\n    at /opt/nvm/versions/node/v10.14.2/lib/node_modules/pnpm/lib/node_modules/normalize-package-data/lib/normalize.js:32:38\n    at Array.forEach (<anonymous>)\n    at normalize (/opt/nvm/versions/node/v10.14.2/lib/node_modules/pnpm/lib/node_modules/normalize-package-data/lib/normalize.js:31:15)\n    at final (/opt/nvm/versions/node/v10.14.2/lib/node_modules/pnpm/lib/node_modules/read-package-json/read-json.js:411:5)\n    at then (/opt/nvm/versions/node/v10.14.2/lib/node_modules/pnpm/lib/node_modules/read-package-json/read-json.js:160:5)\n    at /opt/nvm/versions/node/v10.14.2/lib/node_modules/pnpm/lib/node_modules/read-package-json/read-json.js:364:12\n    at /opt/nvm/versions/node/v10.14.2/lib/node_modules/pnpm/lib/node_modules/graceful-fs/graceful-fs.js:90:16\n    at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)"

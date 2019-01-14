@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CACFRM</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <style>
+        body {
+            background: #24C6DC;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #514A9D, #24C6DC);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+            color: #ffffff;
+            font-family: 'Open Sans Condensed', sans-serif;
+        }
+
+        textarea,
+        div,
+        input {
+            width: 100%;
+
+            background: transparent;
+            border: 1px solid #ffffff;
+
+        }
+
+        textarea,
+        input {
+            color: #ffffff;
+        }
+
+        div {
+            border: 1px solid #ffffff;
+            cursor: pointer;
+        }
+
+        textarea {
+            overflow: hidden;
+            resize: none;
+            outline: none;
+        }
+
+        input {
+            outline: none;
+        }
+
+        ::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #ffffff;
+            opacity: 1;
+            /* Firefox */
+            font-family: 'Open Sans Condensed', sans-serif;
+
+        }
+
+        :-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: #ffffff;
+            font-family: 'Open Sans Condensed', sans-serif;
+        }
+
+        ::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: #ffffff;
+            font-family: 'Open Sans Condensed', sans-serif;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="client.js"></script>
+</head>
+
+<body>
+
+
+    <div style="border: none; font-size: 500%; cursor: default;  text-align: center; font-family: 'Titillium Web', sans-serif;">City Automobile Carbon Footprint Reduction Manager </div><br><br>
+
+
+
+
+
+    <textarea rows="6" placeholder="Please enter automobile data ..." id="enter-data" style="display: none;"></textarea><br><br>
+    <div id="test-data" style="display: none;">Use test automobile data ...</div><br>
+    <input type="text" id="city-carbon-footprint" placeholder="Please enter desired city automobile carbon footprint ..." style="display: none;"><br><br>
+    <div id="generate" style="display: none;">Generate environment-friendly automobile combination ...</div><br>
+    <div id="download" style="display: none;">Download selected car ids ...</div>
+
+
+
+    <br><br>
+
+
+</body>
+
+</html>
